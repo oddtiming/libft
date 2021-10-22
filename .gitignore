@@ -50,3 +50,12 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Misc
+.DS_Store
+.git
+libft-war-machine
+libftTester
+*.swp
+info_fd
+.vscode
