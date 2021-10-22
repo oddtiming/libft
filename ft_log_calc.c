@@ -1,40 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_set.c                                        :+:      :+:    :+:   */
+/*   ft_ft_log_calc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/06 12:49:55 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/10/22 14:02:11 by iyahoui-         ###   ########.fr       */
+/*   Created: 2021/10/22 13:56:13 by iyahoui-          #+#    #+#             */
+/*   Updated: 2021/10/22 14:12:57 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_set(char const c, char const *set)
+int	ft_log_calc(int value, int radix)
 {
-	while (*set)
-	{
-		if (*set == c)
-			return (1);
-		set++;
-	}
-	return (0);
-}
+	int	counter;
+	int	radix_pow;
 
-//is_set_ret returns the index in the string where c was found.
-//Returns -1 if nothing was found
-int	is_set_ret(char const c, char const *set)
-{
-	int	i;
-
-	i = 0;
-	while (set[i])
+	radix_pow = radix;
+	counter = 1;
+	while (radix_pow <= value)
 	{
-		if (set[i] == c)
-			return (i);
-		i++;
+		radix_pow *= radix;
+		counter++;
 	}
-	return (-1);
+	return (counter);
 }
