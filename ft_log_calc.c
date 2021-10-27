@@ -26,3 +26,18 @@ int	ft_log_calc(int value, int radix)
 	}
 	return (counter);
 }
+
+int	ft_log_calc_size_t(size_t value, size_t radix)
+{
+	int		counter;
+	size_t	radix_pow;
+
+	radix_pow = radix;
+	counter = 1;
+	while (radix_pow <= value)
+	{
+		radix_pow *= radix;
+		counter++;
+	}
+	return (counter);
+}

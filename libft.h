@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/10/22 14:21:02 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2021/10/27 18:59:22 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ void	ft_writehex_long(long i);
 char	*ft_hextoa(unsigned long n, char c);
 char	*ft_strncpy(char *dest, char *src, size_t n);
 int		ft_log_calc(int value, int radix);
+int		ft_log_calc_size_t(size_t value, size_t radix);
 int		is_set_ret(char const c, char const *set);
 
 // BONUS (LINKED LISTS)
