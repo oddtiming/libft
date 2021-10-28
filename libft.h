@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/10/06 16:24:36 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2021/10/28 14:41:55 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ void	ft_writehex(int i, char c);
 void	ft_writehex_long(long i);
 char	*ft_hextoa(unsigned long n, char c);
 char	*ft_strncpy(char *dest, char *src, size_t n);
+int	is_set_ret(char const c, char const *set);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list
