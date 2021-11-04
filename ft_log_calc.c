@@ -12,16 +12,20 @@
 
 #include "libft.h"
 
+//Fixed to prevent buffer overflow for values close to LONG_MIN/MAX
+//by decreasing the value instead of increasing the radix
 int	ft_log_calc(int value, int radix)
 {
-	int	counter;
-	int	radix_pow;
+	int		counter;
+	long	value_to_long;
 
-	radix_pow = radix;
 	counter = 1;
-	while (radix_pow <= value)
+	value_to_long = value;
+	if (value_to_long < 0)
+		value_to_long *= -1;
+	while (value_to_long >= radix)
 	{
-		radix_pow *= radix;
+		value_to_long /= radix;
 		counter++;
 	}
 	return (counter);
@@ -30,13 +34,11 @@ int	ft_log_calc(int value, int radix)
 int	ft_log_calc_size_t(size_t value, size_t radix)
 {
 	int		counter;
-	size_t	radix_pow;
 
-	radix_pow = radix;
 	counter = 1;
-	while (radix_pow <= value)
+	while (value >= radix)
 	{
-		radix_pow *= radix;
+		value /= radix;
 		counter++;
 	}
 	return (counter);
