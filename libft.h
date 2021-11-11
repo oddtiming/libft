@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/10/28 15:12:12 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2021/11/11 13:37:31 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ char	*ft_strncpy(char *dest, char *src, size_t n);
 int		is_set_ret(char const c, char const *set);
 int		ft_log_calc(int value, int radix);
 int		ft_log_calc_size_t(size_t value, size_t radix);
+int		get_magnitude(int n);
+int		get_magnitude_unsigned(unsigned int n);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list
