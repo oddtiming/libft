@@ -6,35 +6,11 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 10:55:16 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/09/23 10:13:33 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2021/11/12 16:56:24 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
-
-static int	get_magnitude(int n)
-{
-	int	magnitude;
-
-	magnitude = 1;
-	if (n >= 0)
-	{	
-		while (n >= 10)
-		{
-			magnitude *= 10;
-			n /= 10;
-		}
-	}
-	else if (n < 0)
-	{	
-		while (n <= -10)
-		{
-			magnitude *= 10;
-			n /= 10;
-		}
-	}
-	return (magnitude);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {
