@@ -4,6 +4,7 @@ CFILES	=	ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_get_magnitude.c \
+			ft_get_next_line.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
