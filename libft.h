@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/02/06 20:12:42 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/08 11:44:50 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int		ft_log_calc(int value, int radix);
 int		ft_log_calc_size_t(size_t value, size_t radix);
 int		get_magnitude(int n);
 int		get_magnitude_unsigned(unsigned int n);
-void	ft_free_split(char **arr_split);
+void	ft_free_split(char **split_arr);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list

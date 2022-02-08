@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:05:51 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/12/03 16:52:56 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/01/14 17:26:00 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,20 +56,22 @@ static size_t	get_nb_chunks(char const *s, char const c)
 	return (nb_chunks);
 }
 
-void	ft_free_split(char **arr_split)
+void	ft_free_split(char **split_arr)
 {
 	int	i;
 
 	i = 0;
-	while (arr_split[i])
-		free(arr_split[i++]);
-	free (arr_split);
+	if (!split_arr)
+		return ;
+	while (split_arr[i])
+		free(split_arr[i++]);
+	free (split_arr);
 }
 
 char	**ft_split(char const *s, char const c)
 {
 	size_t	nb_chunks;
-	char	**arr_split;
+	char	**split_arr;
 	size_t	i;
 	size_t	chunk_len;
 
@@ -77,20 +79,20 @@ char	**ft_split(char const *s, char const c)
 	if (!s)
 		return (NULL);
 	nb_chunks = get_nb_chunks(s, c);
-	arr_split = malloc((nb_chunks + 1) * sizeof(char *));
-	if (!arr_split)
+	split_arr = malloc((nb_chunks + 1) * sizeof(char *));
+	if (!split_arr)
 		return (NULL);
 	while (i < nb_chunks)
 	{
 		while (is_char(*s, c))
 			s++;
 		chunk_len = get_chunk_len(s, c);
-		arr_split[i] = ft_substr(s, 0, chunk_len);
-		if (!arr_split[i])
-			ft_free_split(arr_split);
+		split_arr[i] = ft_substr(s, 0, chunk_len);
+		if (!split_arr[i])
+			ft_free_split(split_arr);
 		i++;
 		s += chunk_len;
 	}
-	arr_split[i] = NULL;
-	return (arr_split);
+	split_arr[i] = NULL;
+	return (split_arr);
 }
