@@ -5,6 +5,7 @@ CFILES	=	ft_atoi.c \
 			ft_calloc.c \
 			ft_get_magnitude.c \
 			ft_get_next_line.c \
+			ft_get_token.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
@@ -19,11 +20,13 @@ CFILES	=	ft_atoi.c \
 			ft_memmove.c \
 			ft_memset.c \
 			ft_printhex.c \
+			ft_print_split.c \
 			ft_putchar_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 			ft_putstr_fd.c \
 			ft_split.c \
+			ft_strcat_iter.c \
 			ft_strchr.c \
 			ft_strdup.c \
 			ft_striteri.c \

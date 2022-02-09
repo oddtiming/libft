@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/02/08 11:44:50 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/08 19:58:55 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <string.h>
 # include <limits.h>
 # include <unistd.h>
+//For strjoin_n
+# include <stdarg.h>
 # include "get_next_line.h"
 
 int		ft_isalpha(int c);
@@ -69,6 +71,10 @@ int		ft_log_calc_size_t(size_t value, size_t radix);
 int		get_magnitude(int n);
 int		get_magnitude_unsigned(unsigned int n);
 void	ft_free_split(char **split_arr);
+char	*ft_get_last_token(char *string, char delimiter);
+void	ft_print_split(char **split_arr, char *name);
+void	ft_strcat_iter(char **vector, char *to_cat);
+char	*ft_strjoin_n(size_t nb_strings, ...);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list
