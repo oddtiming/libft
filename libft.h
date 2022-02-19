@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/02/11 15:44:33 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/19 18:37:56 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ char	*ft_get_last_token(char *string, char delimiter);
 void	ft_print_split(char **split_arr, char *name);
 void	ft_strcat_iter(char **vector, char *to_cat);
 char	*ft_strjoin_n(size_t nb_strings, ...);
+void	ft_swap_ints(int *a, int *b);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list
