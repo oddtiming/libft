@@ -6,13 +6,13 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 13:10:14 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/02/20 11:59:43 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/20 18:09:10 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 32
+# define BUFFER_SIZE 10
 #endif
 #define FREE -3
 
