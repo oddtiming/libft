@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 13:10:14 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/02/06 20:15:01 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/20 11:59:43 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 #endif
 #define FREE -3
 
-/*	Reads to the static char *remain until a nl is found, or until
- *	the EOF has been reached. If read() reaches EOF (returns nbyte < BUFF_SIZE)
- *	or attempts an invalid read () (returns -1) and remain[fd] doesn't
- *	end with \n, get_line_len() returns 0.
+/*	Reads to the static char *remain until '\n' is found, or until
+ *	EOF has been reached. If read() reaches EOF (returns nbyte < BUFF_SIZE)
+ *	or attempts an invalid read() (returns -1) and remain doesn't
+ *	end with '\n', get_line_len() returns 0.
  */
 static long	get_line_len(char **remain, int fd)
 {
@@ -42,13 +42,14 @@ static long	get_line_len(char **remain, int fd)
 	return (strlen_c(*remain, '\n'));
 }
 
-/*	get_next_line is used to return the string content of a single input 
- *	stream (fd) line by line. Every function call returns a line including
- *	the \n character.
- *	It uses static char *remain to store the excess buffer from the read()
- *	function (i.e. everything after \n). The second if checks if remain[fd] is
- *	empty. The last if is merely to ensure that free() happens as soon as the
- *	last line is hit. (could be removed to save 7 lines of code)
+/**
+ * @brief	gnl() returns the next line from the file to which fd refers.
+ * 			If fd is invalid, or of EOF has been reached, NULL will be returned
+ * 			Each call to gnl() expects the user to free the returned string.		
+ * 
+ * @param fd : file descriptor 
+ * @return char* : 	A malloced string including the '\n' if applicable.
+ * 					NULL if fd == -1, or if EOF and remain is empty.
  */
 char	*get_next_line(int fd)
 {
