@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:05:51 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/01/14 17:26:00 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/02/26 19:49:51 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ void	ft_free_split(char **split_arr)
 	while (split_arr[i])
 		free(split_arr[i++]);
 	free (split_arr);
+	split_arr = NULL;
+	return ;
 }
 
 char	**ft_split(char const *s, char const c)
