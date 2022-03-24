@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/03/21 09:56:01 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:16:57 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,9 @@ void	ft_print_split(char **split_arr, char *name);
 void	ft_strcat_iter(char **vector, char *to_cat);
 char	*ft_strjoin_n(size_t nb_strings, ...);
 void	ft_swap_ints(int *a, int *b);
+
+//Separate b/c norminette
+unsigned int	ft_atox(char *str);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list

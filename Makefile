@@ -1,6 +1,7 @@
 NAME	=	libft.a
 
 CFILES	=	ft_atoi.c \
+			ft_atox.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_get_magnitude.c \
