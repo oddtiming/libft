@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/03/25 15:17:53 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/03/25 18:37:58 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,10 @@ void	ft_print_split(char **split_arr, char *name);
 void	ft_strcat_iter(char **vector, char *to_cat);
 char	*ft_strjoin_n(size_t nb_strings, ...);
 void	ft_swap_ints(int *a, int *b);
+int		ft_max(int a, int b);
+int		ft_min(int a, int b);
+int		ft_abs(int a);
+bool	ft_same_sign(int a, int b);
 
 //Separate b/c norminette
 unsigned int	ft_atox(char *str);
