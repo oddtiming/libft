@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/03/31 09:04:09 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/04/16 15:58:39 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@
 //For strjoin_n
 # include <stdarg.h>
 # include "get_next_line.h"
+
+//Typedefs
+typedef unsigned int	t_uint;
 
 //bogus edit to test commit
 int		ft_isalpha(int c);
@@ -87,7 +90,7 @@ int		ft_abs(int a);
 bool	ft_same_sign(int a, int b);
 
 //Separate b/c norminette
-unsigned int	ft_atox(char *str);
+t_uint	ft_atox(char *str);
 
 // BONUS (LINKED LISTS)
 typedef struct s_list
