@@ -6,7 +6,7 @@
 /*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 14:15:43 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/03/24 14:17:22 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/04/16 15:58:57 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ unsigned int	ft_atox(char *str)
 
 	hex_base_lower = "0123456789abcdef";
 	hex_base_upper = "0123456789ABCDEF";
-	atox = 0; 
+	atox = 0;
 	i = 0;
 	while (ft_isspace(str[i]))
 		i++;
