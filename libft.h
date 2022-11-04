@@ -6,7 +6,7 @@
 /*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/11/04 15:11:31 by ismaelyahya      ###   ########.fr       */
+/*   Updated: 2022/11/04 15:22:24 by ismaelyahya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int		is_set_ret(char const c, char const *set);
 int		ft_log_calc(int value, int radix);
 int		ft_log_calc_size_t(size_t value, size_t radix);
 int		get_magnitude(int n);
+double	get_magnitude_dbl(double n);
 int		get_magnitude_unsigned(unsigned int n);
 void	ft_free_split(char **split_arr);
 char	*ft_get_last_token(char *string, char delimiter);

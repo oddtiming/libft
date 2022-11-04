@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_magnitude.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
+/*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:35:14 by iyahoui-          #+#    #+#             */
-/*   Updated: 2021/11/11 16:09:03 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:22:56 by ismaelyahya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,19 @@
 int	get_magnitude(int n)
 {
 	int	magnitude;
+
+	magnitude = 1;
+	while (n)
+	{
+		magnitude *= 10;
+		n /= 10;
+	}
+	return (magnitude / 10);
+}
+
+double	get_magnitude_dbl(double n)
+{
+	double	magnitude;
 
 	magnitude = 1;
 	while (n)
