@@ -48,8 +48,7 @@ CFILES	=	ft_atoi.c \
 			ft_substr.c \
 			ft_swap.c \
 			ft_tolower.c \
-			ft_toupper.c \
-			ft_xalloc.c
+			ft_toupper.c
 
 CFILES_B	=	ft_lstsize_bonus.c \
 				ft_lstmap_bonus.c \
