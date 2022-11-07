@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
+/*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/11/04 15:22:24 by ismaelyahya      ###   ########.fr       */
+/*   Updated: 2022/04/16 15:58:39 by iyahoui-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
-double	ft_atof(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
@@ -77,7 +76,6 @@ int		is_set_ret(char const c, char const *set);
 int		ft_log_calc(int value, int radix);
 int		ft_log_calc_size_t(size_t value, size_t radix);
 int		get_magnitude(int n);
-double	get_magnitude_dbl(double n);
 int		get_magnitude_unsigned(unsigned int n);
 void	ft_free_split(char **split_arr);
 char	*ft_get_last_token(char *string, char delimiter);
