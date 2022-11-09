@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iyahoui- <iyahoui-@student.42quebec.com    +#+  +:+       +#+        */
+/*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/04/16 15:58:39 by iyahoui-         ###   ########.fr       */
+/*   Updated: 2022/11/09 11:56:20 by ismaelyahya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int		ft_log_calc(int value, int radix);
 int		ft_log_calc_size_t(size_t value, size_t radix);
 int		get_magnitude(int n);
 int		get_magnitude_unsigned(unsigned int n);
+double	get_magnitude_dbl(double n);
 void	ft_free_split(char **split_arr);
 char	*ft_get_last_token(char *string, char delimiter);
 char	*ft_get_first_token(char *string, char delimiter);

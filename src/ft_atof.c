@@ -6,7 +6,7 @@
 /*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 15:11:37 by ismaelyahya       #+#    #+#             */
-/*   Updated: 2022/11/04 15:11:38 by ismaelyahya      ###   ########.fr       */
+/*   Updated: 2022/11/09 11:56:34 by ismaelyahya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ double	ft_atof(const char *str)
         return (integer);
 	while (ft_isdigit(str[i]))
 		decimal = 10 * decimal + (str[i++] - '0');
-	return ((sign * integer) + (decimal / (get_magnitude(decimal) * 10)));
+	return ((sign * integer) + (decimal / (get_magnitude_dbl(decimal) * 10)));
 }
