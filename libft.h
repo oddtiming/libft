@@ -6,7 +6,7 @@
 /*   By: ismaelyahyaouiracine <ismaelyahyaouirac    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:45:40 by iyahoui-          #+#    #+#             */
-/*   Updated: 2022/11/09 11:56:20 by ismaelyahya      ###   ########.fr       */
+/*   Updated: 2022/11/09 16:04:20 by ismaelyahya      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ int		ft_max(int a, int b);
 int		ft_min(int a, int b);
 int		ft_abs(int a);
 bool	ft_same_sign(int a, int b);
+double	ft_atof(const char *str);
 
 //Separate b/c norminette
 t_uint	ft_atox(char *str);

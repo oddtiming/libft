@@ -1,6 +1,7 @@
 NAME	=	libft.a
 
-CFILES	=	ft_atoi.c \
+CFILES	=	ft_atof.c \
+			ft_atoi.c \
 			ft_atox.c \
 			ft_basic_math.c \
 			ft_bzero.c \
